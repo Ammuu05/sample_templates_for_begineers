@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div id="Home_page">
+        <img src="Homepage_bg.jpg" alt="Background Image" id="bg_img" />
+        <nav>
+            <div id="nav_title">
+                <div id="nav_links">
+                    <nav>
+                        <ul class="sidebar">
+                            <li onclick=hideSidebar() class="nav_items" style="color: white;"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                            <li class="nav_items"><a href="#HomePage_content">Home</a></li>
+                            <li class="nav_items"><a href="#Service_page">Service</a></li>
+                            <li class="nav_items"><a href="#Client_page">Client</a></li>
+                            <li class="nav_items"><a href="#Projects_page">Project</a></li>
+                            <li class="nav_items"><a href="#Contact_page">Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li >Infinite Loop</li>
+                            <li class="nav_items"><a href="#HomePage_content">Home</a></li>
+                            <li class="nav_items"><a href="#Service_page">Service</a></li>
+                            <li class="nav_items"><a href="#Client_page">Client</a></li>
+                            <li class="nav_items"><a href="#Projects_page">Project</a></li>
+                            <li class="nav_items"><a href="#Contact_page">Contact</li>
+                            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" style="color: white;" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        </ul>
+                    </nav>
+                    <script>
+                        function showSidebar(){
+                            const sidebar = document.querySelector('.sidebar')
+                            sidebar.style.display = 'flex'
+                        }
+                        function hideSidebar(){
+                            const sidebar = document.querySelector('.sidebar')
+                            sidebar.style.display = 'none'
+                        }
+                    </script>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="HomePage_content">
+        <h1>Responsive Templates</h1>
+        <p>Modern HTML & Bootstrap Design<br>Free Resources for Web Development</p>
+    </div>
+    <div class="icons">
+        <a href="9095424063" style="color: #23ce62;">☎</a>
+        <a id="chat-button" href="https://api.whatsapp.com/send?phone=+917039170789&amp;text=Hello+I+am+Interestd"
+            target="_blank" rel="nofollow" aria-label="WhatsApp Chat Button"></a>
+    </div>
+    <div id="Service_page">
+        <h1 id="Service_page_Heading">Our HTML Templates</h1>
+        <p id="Service_page_Content">We create responsive Bootstrap templates that help you build modern websites
+            quickly.
+            Our templates are designed with clean code and mobile-first principles.
+            You can customize them for personal projects, educational sites, or portfolio showcases.
+            All templates are well-documented with clear comments to help beginners understand HTML structure.</p>
+        <div class="features">
+            <div class="feature-box">
+                <div class="feature-title">
+                    <i class="fas fa-chart-bar"></i>
+                    <h2>Template Features</h2>
+                </div>
+                <p>Our Bootstrap templates include responsive navigation, optimized grid layouts, and cross-browser
+                    compatibility.
+                    Each template comes with properly structured HTML5 elements and CSS3 animations that work on all
+                    device sizes.
+                </p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-title">
+                    <i class="fas fa-comment-alt"></i>
+                    <h2>Code Support</h2>
+                </div>
+                <p>Get help with HTML customization and Bootstrap implementation. We provide guidance on modifying
+                    template structures and troubleshooting layout issues.
+                </p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-title">
+                    <i class="fas fa-fingerprint"></i>
+                    <h2>Clean Markup</h2>
+                </div>
+                <p>All templates feature semantic HTML with proper indentation and comments.
+                    The code follows webstandards for easy customization and maintenance.
+                </p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-title">
+                    <i class="fas fa-users"></i>
+                    <h2>Bootstrap Components</h2>
+                </div>
+                <p>Our templates utilize Bootstrap's grid system, navigation components, and utility classes.
+                    Learn how to implement carousels, modals, and responsive forms through our examples.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="Client_page">
+        <div>
+            <img src="Client_bg.jpg" alt="Client_page_bg" id="Client_page_background">
+            <h1 id="Client_page_h1">User Experiences</h1>
+            <p class="subheading">Feedback from developers and learners who have used our HTML templates and Bootstrap
+                resources.</p>
+        </div>
+        <div id="imageCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT1.jpg" alt="client 1" class="image">
+                            <p style="color: white;">These templates helped me understand Bootstrap grid system quickly.
+                                The clean code structure made customization straightforward.</p>
+                            <em style="color: white; font-style: italic;">Web Development Student</em>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT2.jpg" alt="client 2" class="image">
+                            <p style="color: white;">I used the portfolio template for my college project. The
+                                responsive design worked perfectly on all devices without extra coding.</p>
+                            <em style="color: white; font-style: italic;">Computer Science Student</em>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT3.jpg" alt="client 3" class="image">
+                            <p style="color: white;">As a beginner, the well-commented HTML helped me learn proper
+                                structuring. I could see how components work together..</p>
+                            <em style="color: white; font-style: italic;">Coding Bootcamp Participant</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT2.jpg" alt="client 2" class="image">
+                            <p style="color: white;">I used the portfolio template for my college project. The
+                                responsive design worked perfectly on all devices without extra coding.</p>
+                            <em style="color: white; font-style: italic;">Computer Science Student</em>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT3.jpg" alt="client 3" class="image">
+                            <p style="color: white;">As a beginner, the well-commented HTML helped me learn proper
+                                structuring. I could see how components work together..</p>
+                            <em style="color: white; font-style: italic;">Coding Bootcamp Participant</em>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT4.jpg" alt="client 4" class="image">
+                            <p style="color: white;">The templates saved me hours of coding. I used the e-learning
+                                template as a base for my online course project.</p>
+                            <em style="color: white; font-style: italic;">Freelance Developer</em>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT3.jpg" alt="client 3" class="image">
+                            <p style="color: white;">As a beginner, the well-commented HTML helped me learn proper
+                                structuring. I could see how components work together..</p>
+                            <em style="color: white; font-style: italic;">Coding Bootcamp Participant</em>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT4.jpg" alt="client 4" class="image">
+                            <p style="color: white;">The templates saved me hours of coding. I used the e-learning
+                                template as a base for my online course project.</p>
+                            <em style="color: white; font-style: italic;">Freelance Developer</em>
+                        </div>
+                        <div class="col-4 col-md-3">
+                            <img src="CLIENT5.jpg" alt="client 5" class="image">
+                            <p style="color: white;">Perfect for teaching HTML concepts. My students could experiment
+                                with the code without breaking layouts.</p>
+                            <em style="color: white; font-style: italic;">Programming Instructor</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators" style="margin-bottom: -15px;">
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+        <div id="Projects_page">
+            <div>
+                <h1 id="Projects_page_head">Template Gallery</h1>
+                <p class="subtitle">Preview our responsive Bootstrap templates with clean HTML structure.
+                    Each template is mobile-friendly and easily customizable.</p>
+            </div>
+            <div id="projectCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="Galary_img1.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>PORTFOLIO TEMPLATE</p>
+                                                <p class="p2">BOOTSRTAP5</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img2.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p class="p2">RESPONSIVE</p>
+                                                <p>BLOGLAYOUT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img3.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>BUSINESS</p>
+                                                <p class="p2">TEMPLATE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img2.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p class="p2">RESPONSIVE</p>
+                                                <p>BLOGLAYOUT</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img3.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>BUSINESS</p>
+                                                <p class="p2">TEMPLATE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img4.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p class="p2">E-COMMERCE</p>
+                                                <p>DESIGN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img3.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>BUSINESS</p>
+                                                <p class="p2">TEMPLATE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img4.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>E-COMMERCE</p>
+                                                <p class="p2">DESIGN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img5.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>LANDING PAGE</p>
+                                                <p class="p2">EXAMPLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img4.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>E-COMMERCE</p>
+                                                <p class="p2">DESIGN</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img5.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>LANDING PAGE</p>
+                                                <p class="p2">EXAMPLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img06.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p class="p2">DASHBOARD</p>
+                                                <p>INTERFACE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img5.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p class="p2">LANDING PAGE</p>
+                                                <p>EXAMPLE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img06.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p class="p2">DASHBOARD</p>
+                                                <p>INTERFACE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <div class="container mt-5">
+                                    <div class="image-overlay-wrapper" ontouchstart="this.classList.add('hovered')">
+                                        <img src="gallery_img3.jpg" alt="Image 1" class="images">
+                                        <div class="overlay">
+                                            <div class="overlay-text">
+                                                <p>EDUCATIONAL</p>
+                                                <p class="p2">TEMPLATE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel_indicators">
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+            </div>
+            <div id="Contact_page">
+                <div class="content">
+                    <h1>Template Support</h1>
+                    <p id="content_p">Have questions about customizing our Bootstrap templates? Need help with HTML implementation?
+                        Contact us for assistance with template customization and code understanding.</p>
+                    <form class="form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Your Number" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Message" rows="6"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="contact-info">
+                        <a href="mailto:info@infiniteloop.com">
+                            <span>📧 info@infiniteloop.com </span>
+                        </a>
+                        <a href="#">
+                            <span>📍 Location: A-101, Zone Park, Sv Road, Andheri (West), Mumbai.</span>
+                        </a>
+                        <a href="+919987337962">
+                            <span>📞 +919987337962</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms And Conditions</a></p>
+                <p>©2024 All Right Reserved By Infinite Loop</p>
+            </footer>
+        </div>
+</body>
+</html>
